@@ -5,6 +5,7 @@
 var myApp = angular.module('myModule', []);
 
 myApp.controller("schoolController", schoolController);
+myApp.directive("teduShopDirective", teduShopDirective);
 myApp.service('Validator', Validator);
 schoolController.$inject = ['$scope', 'Validator'];
 
@@ -24,5 +25,11 @@ function Validator($window) {
             return 'this is even';
         } else
             return'this is odd';
+    }
+}
+
+function teduShopDirective() {
+    return {
+        templateUrl:"/Scripts/spa/teduShopDirective.html"
     }
 }
