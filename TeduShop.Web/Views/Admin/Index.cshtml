@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/plugins/angular/angular.js"></script>
+    
+    <script src="~/Scripts/spa/app.js"></script>
+</head>
+<body ng-app="myModule">
+    <div ng-controller="schoolController">
+
+        <input type="number" ng-model="num" />value of textbox{{num}}
+        <button ng-click="checkNumber()">CheckNumber</button>
+        <br />
+        {{message}}
+    </div>
+</body>
+</html>
+
+
+
+
