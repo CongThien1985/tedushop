@@ -243,7 +243,7 @@
                         <ul class="treeview-menu">
                             <li><a ui-sref="product_categories"><i class="fa fa-circle-o"></i>Danh mục sản phẩm</a></li>
                             <li><a ui-sref="products"><i class="fa fa-circle-o"></i>Sản phẩm</a></li>
-                            
+
                         </ul>
                     </li>
                     <li>
@@ -396,7 +396,7 @@
         <!-- =============================================== -->
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-           <div ui-view></div>
+            <div ui-view></div>
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
@@ -583,7 +583,7 @@
     <!-- Bootstrap 3.3.7 -->
     @*<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>*@
     <script src="~/Assets/admin/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
     <!-- SlimScroll -->
     @*<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>*@
     <script src="~/Assets/admin/libs/slimScroll/jquery.slimscroll.min.js"></script>
@@ -600,6 +600,7 @@
     <script src="~/Assets/admin/libs/angular/angular.js"></script>
     <script src="~/Assets/admin/libs/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="~/Assets/admin/libs/toastr/toastr.js"></script>
+
     <script src="~/app/shared/modules/tedushop.common.js"></script>
     <script src="~/app/shared/filters/statusFilter.js"></script>
     <script src="~/app/shared/services/apiService.js"></script>
@@ -608,10 +609,14 @@
     <script src="~/app/components/products/products.module.js"></script>
     <script src="~/app/components/product_categories/productCategories.module.js"></script>
     <script src="~/app/app.js"></script>
+
     <script src="~/app/components/product_categories/productCategoryListController.js"></script>
+    <script src="~/app/components/product_categories/productCategoryAddController.js"></script>
     <script src="~/app/components/products/productAddController.js"></script>
     <script src="~/app/components/products/productListController.js"></script>
     <script src="~/app/components/home/homeController.js"></script>
+
+
     <script>
         $(document).ready(function () {
             $('.sidebar-menu').tree()
