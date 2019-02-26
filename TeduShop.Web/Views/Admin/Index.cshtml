@@ -35,9 +35,10 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini" ng-app="tedushop">
+<body class="hold-transition skin-blue sidebar-mini" ng-app="tedushop" ng-controller="rootController">
+    <div ui-view></div>
     <!-- Site wrapper -->
-    <div class="wrapper">
+    @*<div class="wrapper">
         <header class="main-header">
             <!-- Logo -->
             <a href="../../index2.html" class="logo">
@@ -576,7 +577,7 @@
         <!-- Add the sidebar's background. This div must be placed
              immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
-    </div>
+    </div>*@
     <!-- ./wrapper -->
     <!-- jQuery 3 -->
     @*<script src="../../bower_components/jquery/dist/jquery.min.js"></script>*@
@@ -615,6 +616,7 @@
     <script src="~/app/components/products/products.module.js"></script>
     <script src="~/app/components/product_categories/productCategories.module.js"></script>
     <script src="~/app/app.js"></script>
+    <script src="~/app/components/home/rootController.js"></script>
     <script src="~/app/components/product_categories/productCategoryListController.js"></script>
     <script src="~/app/components/product_categories/productCategoryAddController.js"></script>
     <script src="~/app/components/products/productAddController.js"></script>
@@ -622,6 +624,7 @@
     <script src="~/app/components/products/productListController.js"></script>
     <script src="~/app/components/home/homeController.js"></script>
     <script src="~/app/components/products/productEditController.js"></script>
+    <script src="~/app/components/login/loginController.js"></script>
 
     <script>
         $(document).ready(function () {
