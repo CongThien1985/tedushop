@@ -15,6 +15,7 @@ using System.Web.Script.Serialization;
 namespace TeduShop.Web.Api
 {
     [RoutePrefix("api/productcategory")]
+
     public class ProductCategoryController : ApiControllerBase
     {
         private IProductCategoryService _productCategoryService;
