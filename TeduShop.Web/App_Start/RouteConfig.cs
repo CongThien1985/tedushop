@@ -40,6 +40,12 @@ namespace TeduShop.Web
               namespaces: new string[] { "TeduShop.Web.Controllers" }
           );
             routes.MapRoute(
+            name: "Cart",
+            url: "gio-hang.html",
+            defaults: new { controller = "ShoppingCart", action = "Index", id = UrlParameter.Optional },
+            namespaces: new string[] { "TeduShop.Web.Controllers" }
+        );
+            routes.MapRoute(
             name: "Page",
             url: "trang/{alias}.html",
             defaults: new { controller = "Page", action = "Index", alias = UrlParameter.Optional },
