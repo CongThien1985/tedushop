@@ -114,8 +114,28 @@
     <Compile Include="Migrations\201904021405185_AddCustomerId.Designer.cs">
       <DependentUpon>201904021405185_AddCustomerId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904051405083_RenameTables.cs" />
+    <Compile Include="Migrations\201904051405083_RenameTables.Designer.cs">
+      <DependentUpon>201904051405083_RenameTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904051425399_AddGroupUser.cs" />
+    <Compile Include="Migrations\201904051425399_AddGroupUser.Designer.cs">
+      <DependentUpon>201904051425399_AddGroupUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904061217379_ChangeOrderDetail.cs" />
+    <Compile Include="Migrations\201904061217379_ChangeOrderDetail.Designer.cs">
+      <DependentUpon>201904061217379_ChangeOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904061353591_RevenuesStaticSP.cs" />
+    <Compile Include="Migrations\201904061353591_RevenuesStaticSP.Designer.cs">
+      <DependentUpon>201904061353591_RevenuesStaticSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ApplicationGroupRepository.cs" />
+    <Compile Include="Repositories\ApplicationRoleGroupRepository.cs" />
+    <Compile Include="Repositories\ApplicationRoleRepository.cs" />
+    <Compile Include="Repositories\ApplicationUserGroupRepository.cs" />
     <Compile Include="Repositories\ContactDetailRepository.cs" />
     <Compile Include="Repositories\ErrorRepository.cs" />
     <Compile Include="Repositories\FeedbackRepository.cs" />
@@ -193,6 +213,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904021405185_AddCustomerId.resx">
       <DependentUpon>201904021405185_AddCustomerId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904051405083_RenameTables.resx">
+      <DependentUpon>201904051405083_RenameTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904051425399_AddGroupUser.resx">
+      <DependentUpon>201904051425399_AddGroupUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904061217379_ChangeOrderDetail.resx">
+      <DependentUpon>201904061217379_ChangeOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904061353591_RevenuesStaticSP.resx">
+      <DependentUpon>201904061353591_RevenuesStaticSP.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
